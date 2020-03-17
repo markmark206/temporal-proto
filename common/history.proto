@@ -76,7 +76,7 @@ message WorkflowExecutionTimedOutEventAttributes {
 }
 
 message WorkflowExecutionContinuedAsNewEventAttributes {
-    string newExecutionRunId = 1;
+    bytes newExecutionRunId = 1;
     WorkflowType workflowType = 2;
     TaskList taskList = 3;
     bytes input = 4;
